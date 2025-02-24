@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="conteiner">
+            <span class="logo">logo</span>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#" onclick="showSection('fast-food')">Фаст фуд</a></li>
+                    <li><a href="#" onclick="showSection('asia')">Азиатская кухня</a></li>
+                    <li><a href="#" onclick="showSection('europe')">Европейская кухня</a></li>
+                    <li><a href="#" onclick="showSection('drinks')">Напитки</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="conteiner trending" id="fast-food">
+            <div class="games">
+                <div class="title" style="text-align: center; margin-bottom: 20px; margin-left: 30px; font-size: 30px;">Фаст фуд</div>
+
+                <div class="card">
+                    <img src="03.jpg" alt="Шаурма">
+                    <div class="card-body">
+                        <div class="food-name">Шаурма</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="burger.jpg" alt="Бургер">
+                    <div class="card-body">
+                        <div class="food-name">Бургер</div>
+                        <div class="price">Цена: 150сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="pizza.jpg" alt="Пицца">
+                    <div class="card-body">
+                        <div class="food-name">Пицца</div>
+                        <div class="price">Цена: 300сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="free.jpg" alt="Кортошка фри">
+                    <div class="card-body">
+                        <div class="food-name">Кортошка фри</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteiner trending" id="asia">
+            <div class="games">
+                <div class="title" style="text-align: center; margin-bottom: 20px; margin-left: 30px; font-size: 30px;">Азиатская кухня</div>
+
+                <div class="card">
+                    <img src="sushi.jpg" alt="Сущи">
+                    <div class="card-body">
+                        <div class="food-name">Сущи</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="kebab.jpg" alt="Кебаб">
+                    <div class="card-body">
+                        <div class="food-name">Кебаб</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="lapsha.jpg" alt="Лапша">
+                    <div class="card-body">
+                        <div class="food-name">Лапша</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="shurpa.png" alt="Шурпа">
+                    <div class="card-body">
+                        <div class="food-name">Шурпа</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteiner trending" id="europe">
+            <div class="games">
+                <div class="title" style="text-align: center; margin-bottom: 20px; margin-left: 30px; font-size: 30px;">Европейская кухня</div>
+
+                <div class="card">
+                    <img src="gulyash.jpg" alt="Гуляш">
+                    <div class="card-body">
+                        <div class="food-name">Гуляш</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="game1.jpg" alt="Название">
+                    <div class="card-body">
+                        <div class="food-name">Название</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="game1.jpg" alt="Название">
+                    <div class="card-body">
+                        <div class="food-name">Название</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="game1.jpg" alt="Название">
+                    <div class="card-body">
+                        <div class="food-name">Название</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteiner trending" id="drinks">
+            <div class="games">
+                <div class="title" style="text-align: center; margin-bottom: 20px; margin-left: 30px; font-size: 30px;">Напитки</div>
+
+                <div class="card">
+                    <img src="koka-kola.jpg" alt="Кола">
+                    <div class="card-body">
+                        <div class="food-name">Кола</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="fanta.png" alt="Фанта">
+                    <div class="card-body">
+                        <div class="food-name">Фанта</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="nitro.jpg" alt="Нитро">
+                    <div class="card-body">
+                        <div class="food-name">Нитро</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="sprite.jpg" alt="Sprite">
+                    <div class="card-body">
+                        <div class="food-name">Sprite</div>
+                        <div class="price">Цена: 200сом</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function showSection(sectionId) {
+                // Скрываем все секции
+                const sections = document.querySelectorAll('.trending');
+                sections.forEach(section => section.style.display = 'none');
+
+                // Показываем нужную секцию
+                document.getElementById(sectionId).style.display = 'block';
+
+                // Обновляем активный пункт меню
+                document.querySelectorAll("nav ul li").forEach(li => li.classList.remove("active"));
+                
+                // Находим активную ссылку и добавляем `active` к `li`
+                document.querySelector(`nav ul li a[href="#"][onclick="showSection('${sectionId}')"]`)?.parentElement.classList.add("active");
+
+                // Закрываем меню на мобильных после выбора
+                document.querySelector("nav ul").classList.remove("active");
+            }
+
+            function toggleMenu() {
+                document.querySelector("nav ul").classList.toggle("active");
+                window.onload = () => showSection('fast-food');
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>
